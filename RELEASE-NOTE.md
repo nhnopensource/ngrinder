@@ -1,3 +1,28 @@
+3.5.4 (2021.03.10)
+==================
+- Changes
+    - Release new experimental HttpClient based on apache http5-core
+        * Support modern HTTP specification
+        * Provide easy-to-use APIs
+    - Use controller DNS instead of IP to support agent-controller reconnection in cloud env
+    - Support script template customization
+        * Each ngrinder admin can deploy customized script template under ${NGRINDER_HOME}/script_template
+    - Provide the connection reset option in test configuration page
+        * If you turn it on, it tries to reuse connection as much as possible.
+    - Bump Jython standard up to 2.7.2
+    - Bump internal used Junit up to 4.13.1
+        * nGrinder no longer depended on specific version of junit for perf testing
+- Bug fix
+    - #706 Cancel progressing state test when starting controller
+    - #714 Fix validation error when using AppClassLoader in over JDK9
+    - #716 Fix script validation error in windows
+    - #731 Fix not working remember-me
+    - #739 Fix easy clustering
+    - #745 Make compatibility with IE11
+    - #748 Make grinder utils work on Jython performance test
+    - #773 Fix cannot search user with two characters
+    - #774 Fix duplicated running test on one user
+
 3.5.3 (2020.11.27)
 ==================
 - Changes
